@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mattithyahu Data Science Projects
+title: Mattithyahu Data Science and Quantitative Research Projects
 email: contactemail@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   General discription of all project.... 
