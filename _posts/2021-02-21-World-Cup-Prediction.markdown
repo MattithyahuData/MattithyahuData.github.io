@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  " ⚽ ⚽ World Cup 2018 Prediction"
-title: "TESTTT"
+title:  " ⚽ World Cup 2018 Prediction"
 date:   2020-11-30 16:30:58 +0100
 categories: jekyll update
 ---
-# ⚽ World Cup 2018 Prediction: Project Overview 
+# ⚽ Project Overview 
 * End to end project researching the effects certain attributes have on the value of a car
 * Optimized Linear Regression model using only relevant data in a date range
 
