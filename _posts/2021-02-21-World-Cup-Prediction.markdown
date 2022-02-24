@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " ⚽ ⚽ World Cup 2018 Prediction" <br>
+title:  " ⚽ ⚽ World Cup 2018 Prediction"
 title: "TESTTT"
 date:   2020-11-30 16:30:58 +0100
 categories: jekyll update
