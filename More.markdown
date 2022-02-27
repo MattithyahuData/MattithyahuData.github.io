@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: More
+permalink: /more/
 ---
 
 Hi, welcome to my project and publication portfolio. 
