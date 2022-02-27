@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  " ⚽ World Cup 2018 Prediction"
-date:   2022-02-24 16:30:58 +0100
+title:  "⚽ World Cup 2018 Prediction"
+date:   2021-11-01 16:30:58 +0100
 categories: jekyll update
 ---
-# ⚽ Project Overview 
+# Project Overview 
 * End to end project researching the effects certain attributes have on the value of a car
 * Optimized Linear Regression model using only relevant data in a date range
 
-[View Code](https://github.com/MattithyahuData/P1-World-Cup-2018-Prediction/blob/main/Code/P1%20Code.ipynb)
+[View Code](https://github.com/MattithyahuData/P1-World-Cup-2018-Prediction/blob/main/Code/P1_Code.ipynb)
 
 ## Resources Used
 **Python 3** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas, numpy, scikit-learn**
+[**Anaconda Packages:**]((https://github.com/MattithyahuData/P1-World-Cup-2018-Prediction/blob/main/requirements.txt) **pandas, numpy, scikit-learn**
 
 Kaggle Data source links: 
 * [results](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017/data?select=results.csv) 
@@ -50,10 +50,10 @@ The highest level of football before Senior football is U21 football. For nation
     * Confluence
     * Trello 
 
-## Questions and See more projects    
-
-* #### [See more projects here](https://mattithyahutech.co.uk/)
-* #### [Contact me here](mailto:theanalyticsolutions@gmail.com) 
+## Questions | Contact me 
+For questions, feedback, and contribution requests contact me
+* ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
+* ### [See more projects here](https://mattithyahudata.github.io/) 
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
