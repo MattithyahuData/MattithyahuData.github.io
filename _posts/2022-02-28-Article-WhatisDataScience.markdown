@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is Data Science"
+title:  "Article: What is Data Science"
 date:   2022-02-28 16:30:58 +0100
 categories: jekyll update
 ---
