@@ -9,7 +9,7 @@ categories: jekyll update
 
 #### *"What is Data Science?"* is a straightforward question, but the answers can often be over complicated. 
 
-<img src="data1.jpg"/>
+<img src="https://github.com/MattithyahuData/Article-What-is-Data-Science/blob/master/images/data1.jpg"/>
 
 <br>
 <br>
