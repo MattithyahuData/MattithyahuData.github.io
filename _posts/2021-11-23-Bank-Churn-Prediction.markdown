@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project: 🏦 Bank Churn Analysis"
+title:  "Project: 🏦 Bank Churn Prediction"
 date:   2021-11-23 16:30:58 +0100
 categories: jekyll update
 ---
