@@ -253,7 +253,7 @@ g = sns.barplot("CrossValMeans","Algorithm",data = cv_res, palette="Set3",orient
 g.set_xlabel("Mean Accuracy")
 g = g.set_title("Cross validation scores")
 ```
-
+* Here we can see the models with the greatest accuracies 
 <img src="/images/P2/Crossvalidation.png" />
 
 <a name="ModelPerf"></a> 
