@@ -151,7 +151,7 @@ Change!!
 ![Alt text for broken image link](/images/data1.jpg)
 
 
-![Alt text for broken image link](/images/Churn_barchart_distrib.jpg)
+![Alt text for broken image link](/images/Churnbarchartdistrib.jpg)
 
 <img src="/P2/images/independentfeatures_distrib.png" />
 
