@@ -44,6 +44,8 @@ The highest level of football before Senior football is U21 football. For nation
 * Currently doing more research to validate any lower or higher number. I will simply update the function input when I get this info. 
 * Past performance of previous squads does not guarantee future performance 
 
+<iframe title="P2Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+
 ## Project Management (Agile | Scrum)
 * Resources used
     * Jira
