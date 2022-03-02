@@ -144,7 +144,7 @@ colors = ["#32CD32","#FF0000"]
 sns.set_palette(sns.color_palette(colors))
 ```
 
-Change!!
+Change!!!!
 
 <img src="/P2/images/Churn_barchart_distrib.png" />
 
