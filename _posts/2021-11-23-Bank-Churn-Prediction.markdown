@@ -150,7 +150,7 @@ sns.set_palette(sns.color_palette(colors))
 
 ![b2](/images/churnbarchartdistrib.png)
 
-Change!
+Change!!
 
 <img src="/P2/images/Churn_barchart_distrib.png" />
 
