@@ -144,6 +144,8 @@ colors = ["#32CD32","#FF0000"]
 sns.set_palette(sns.color_palette(colors))
 ```
 
+![Alt text for broken image link](/images/data2.jpg)
+
 ![b1](/images/data2.jpg)
 
 ![b2](/images/churnbarchartdistrib.png)

@@ -20,6 +20,8 @@ Kaggle Data source links:
 * [fifa_rankings](https://www.kaggle.com/tadhgfitzgerald/fifa-international-soccer-mens-ranking-1993now) 
 * [fixtures](https://fixturedownload.com/feed/json/fifa-world-cup-2018)
 
+![Alt text for broken image link](/images/data2.jpg)
+
 ## Data Collection
 Download Sources: Kaggle | fixturedownload
 * Using all international game data was key, as we needed past instances of teams performances
