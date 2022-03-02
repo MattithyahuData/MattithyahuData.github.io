@@ -30,7 +30,7 @@ categories: jekyll update
 *   [Project Management (Agile/Scrum/Kanban)](#Prjmanage)<br>
 *   [Project Evaluation](#PrjEval)<br>
 *   [Looking Ahead](#Lookahead)<br>
-*   [Questions | Contact me ](#Questions)<br>
+*   [Questions & Contact me](#Questions)<br>
 
          
 ## Resources Used
@@ -143,15 +143,15 @@ I looked at the distributions of the data and the value counts for the various c
 colors = ["#32CD32","#FF0000"]
 sns.set_palette(sns.color_palette(colors))
 ```
-<img src="images/Churn_barchart_distrib.png" />
-<img src="images/independentfeatures_distrib.png" />
+<img src="/P2/images/Churn_barchart_distrib.png" />
+<img src="/P2/images/independentfeatures_distrib.png" />
 
 *   The box plots show those features with outliers. Those features are 'creditscore', 'age', 'tenure', 'balance', 'numofproducts', 'estimatedsalary'. 
 *   Because of the outliers the features will need to be scaled before modelling. 
-<img src="images/boxplots.png" />
+<img src="v/P2/images/boxplots.png" />
 
 *   The features are very correlated generally. 
-<img src="images/churn_correlation.png" />
+<img src="/P2/images/churn_correlation.png" />
 
 <a name="Dataviz"></a> 
 
@@ -162,7 +162,7 @@ sns.set_palette(sns.color_palette(colors))
 
 <!-- Dashboard  -->
 
-<!-- <iframe title="P2Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe> -->
+<iframe title="P2Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
 
 <a name="Busintelli"></a>  
 
@@ -254,7 +254,7 @@ g.set_xlabel("Mean Accuracy")
 g = g.set_title("Cross validation scores")
 ```
 
-<img src="images/Crossvalidation.png" />
+<img src="/P2/images/Crossvalidation.png" />
 
 <a name="ModelPerf"></a> 
 
@@ -305,10 +305,10 @@ rf_best.fit(X_train,y_train)
 ## [Model Evaluation](Code/P2_Code.ipynb)
 *   A confusion matrix showing the accuracy score of 86.8% achieved by the model. 
 **Random Forest Classifier**
-<img src="images/Confusionmatrixrf.png" />
+<img src="/P2/images/Confusionmatrixrf.png" />
 
 *   Plotted a ROC curve to show the trade-off between sensitivity (or TPR) and specificity (1 – FPR). Classifiers that give curves closer to the top-left corner indicate a better performance. Here we see how the Random Forest Classifier outperforms the SVC.
-<img src="images/ROC_Curve.png" />
+<img src="/P2/images/ROC_Curve.png" />
 
 *   Using 'feature_importances_' I found the age of a customer has the biggest weight in how likely they are to churn. 
 
@@ -378,7 +378,7 @@ I deployed this model in Microsoft Power BI for business intelligence use. [View
 
 <a name="Questions"></a> 
 
-## Questions | Contact me 
+## Questions & Contact me 
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more projects here](https://mattithyahudata.github.io/)
