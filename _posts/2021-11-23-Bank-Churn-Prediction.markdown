@@ -32,6 +32,9 @@ categories: jekyll update
 *   [Looking Ahead](#Lookahead)<br>
 *   [Questions & Contact me](#Questions)<br>
 
+
+<br>
+<br>
 <a name="resources"></a>    
 
 ## Resources Used
