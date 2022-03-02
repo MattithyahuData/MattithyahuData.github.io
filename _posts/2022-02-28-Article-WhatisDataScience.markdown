@@ -10,6 +10,7 @@ categories: jekyll update
 #### *"What is Data Science?"* is a straightforward question, but the answers can often be over complicated. 
 
 <!-- <img src="{{ site.baseurl }}/images/data1.jpg"/> -->
+![Alt text for broken image link](images/data1.jpg)
 
 <br>
 <br>
