@@ -254,7 +254,7 @@ g.set_xlabel("Mean Accuracy")
 g = g.set_title("Cross validation scores")
 ```
 
-<img src="images/Crossvalidation.png" />
+<img src="/images/P2/Crossvalidation.png" />
 
 <a name="ModelPerf"></a> 
 
@@ -305,10 +305,10 @@ rf_best.fit(X_train,y_train)
 ## [Model Evaluation](Code/P2_Code.ipynb)
 *   A confusion matrix showing the accuracy score of 86.8% achieved by the model. 
 **Random Forest Classifier**
-<img src="images/Confusionmatrixrf.png" />
+<img src="/images/P2/Confusionmatrixrf.png" />
 
 *   Plotted a ROC curve to show the trade-off between sensitivity (or TPR) and specificity (1 – FPR). Classifiers that give curves closer to the top-left corner indicate a better performance. Here we see how the Random Forest Classifier outperforms the SVC.
-<img src="images/ROC_Curve.png" />
+<img src="/images/P2/ROC_Curve.png" />
 
 *   Using 'feature_importances_' I found the age of a customer has the biggest weight in how likely they are to churn. 
 
