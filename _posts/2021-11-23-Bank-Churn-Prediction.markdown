@@ -32,18 +32,19 @@ categories: jekyll update
 *   [Looking Ahead](#Lookahead)<br>
 *   [Questions & Contact me](#Questions)<br>
 
-         
+<a name="Resources"></a>    
+
 ## Resources Used
 **Python 3, PostgreSQL, Power BI** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel** <br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel** <br><br>
 Powershell command for installing anaconda packages used for this project  
 ```powershell
 pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel
 ```
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P2_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```
 !kaggle datasets download -d kmalit/bank-customer-churn-prediction -p ..\Data --unzip 
@@ -68,7 +69,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P2_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   Formatted column headers to SQL compatibility. 
@@ -97,7 +98,7 @@ data.columns = data.columns.str.replace(' ','_')
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P2_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -133,7 +134,7 @@ store_data(data,"P2 Bank Churn Prediction")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P2_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   20.37% of customers have churned - Distribution of features and their effects on churning - Some features have outliers, visualising this allows for greater clarity on the extent. 
 * As this is a binary classification use case, I set my colour palette to take red and green. Red for the 'bad' outcome and green for the better outcome. Of course, this can be subjective based on the person setting the colours. 
@@ -160,9 +161,6 @@ sns.set_palette(sns.color_palette(colors))
 *   I created an interactive dashboard to deploy the machine learning model to benefit the business.
 *   I visualised various key features and highlighted their overall correlation to a customers churn. 
 
-<!-- Dashboard  -->
-
-<iframe title="P2Dashboard" width="1100" height="673.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
 
 <a name="Busintelli"></a>  
 
@@ -177,7 +175,7 @@ On Page 2 of the interactive dashboard, I have provided the stake holders with t
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P2_Code.ipynb)   
+## [Feature Engineering](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)   
 I transformed the categorical variable(s) 'geography' and 'gender' into dummy variables. I also split the data into train and tests sets with a test size of 20%. Shuffling the data is important for randomness as the data can come in clusters of outcome values which would affect the output. Stratifying is used so y_test can reflect y_train. Resulting in a more realistic simulation of how the model is going to perform on new data. 
 *   One Hot encoding to encode values
 *   Using RobustScaler to scale  
@@ -205,7 +203,7 @@ print(X_test.shape)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P2_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 
 I tried five different models and evaluated them using initially using accuracy_score and then MSE/RMSE. I chose MSE and RMSE because it is sensitive to outliers, punishes larger errors and is relatively easy to interpret.   
 
@@ -258,13 +256,13 @@ g = g.set_title("Cross validation scores")
 
 <a name="ModelPerf"></a> 
 
-## [Model performance](Code/P2_Code.ipynb)
+## [Model performance](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 The Random Forest Classifier model outperformed the other approaches on the test and validation sets. 
 *   **Random Forest Classifier** : Accuracy = 86.8% 
 
 <a name="ModelOpt"></a> 
 
-## [Model Optimisation](Code/P2_Code.ipynb)
+## [Model Optimisation](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 In this step, I used GridsearchCV to find the best parameters to optimise the performance of the model.
 However, in this instance the performance of the model was reduced, so I stuck with the initial parameters. 
 
@@ -302,7 +300,7 @@ rf_best.fit(X_train,y_train)
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P2_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Code.ipynb)
 *   A confusion matrix showing the accuracy score of 86.8% achieved by the model. 
 **Random Forest Classifier**
 <img src="/images/P2/Confusionmatrixrf.png" />
@@ -314,7 +312,7 @@ rf_best.fit(X_train,y_train)
 
 <a name="ModelProd"></a> 
 
-## [Model Productionising](Code/P2_Vis_prep.ipynb)
+## [Model Productionising](https://github.com/MattithyahuData/P2-Bank-churn-prediction/blob/master/Code/P2_Vis_prep.ipynb)
 *   I used the pickle library to export the model. 
 <br>
 
@@ -350,6 +348,11 @@ I deployed this model in Microsoft Power BI for business intelligence use. [View
 *   I exported the model as a .pkl file and applied it to the unseen data set to get churn predictions and probability predictions.
 *   I visualised this in Power BI and using conditional formatting to highlight those new customer that are more likely to churn based on the models prediction. 
 
+<!-- Dashboard  -->
+
+<iframe title="P2Dashboard" width="1100" height="673.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+
+
 <a name="Prjmanage"></a> 
 
 ## [Project Management (Agile/Scrum/Kanban)](https://www.atlassian.com/software/jira)
@@ -360,7 +363,7 @@ I deployed this model in Microsoft Power BI for business intelligence use. [View
 
 <a name="PrjEval"></a> 
 
-## [Project Evaluation](Presentation/P11Presentation.pptx) 
+## Project Evaluation
 *   WWW
     *   The end-to-end process
     *   Deployment and sharing of work 
