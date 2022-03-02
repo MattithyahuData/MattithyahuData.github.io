@@ -33,8 +33,6 @@ categories: jekyll update
 *   [Questions & Contact me](#Questions)<br>
 
 
-<br>
-<br>
 <a name="resources"></a>    
 
 ## Resources Used
