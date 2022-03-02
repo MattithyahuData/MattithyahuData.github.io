@@ -27,7 +27,7 @@ categories: jekyll update
 *   [Model Evaluation](#ModelEval)<br>
 *   [Model Productionising](#ModelProd)<br>
 *   [Deployment](#ModelDeploy)<br>
-*   [Project Management (Agile | Scrum)](#Prjmanage)<br>
+*   [Project Management (Agile/Scrum/Kanban)](#Prjmanage)<br>
 *   [Project Evaluation](#PrjEval)<br>
 *   [Looking Ahead](#Lookahead)<br>
 *   [Questions | Contact me ](#Questions)<br>
@@ -50,7 +50,7 @@ Powershell command for data import using kaggle API <br>
 ```
 [Data source link](https://www.kaggle.com/kmalit/bank-customer-churn-prediction)
 [Data](Data/Churn_Modelling.csv)
-*  Rows: 10000 | Columns: 14
+*  Rows: 10000  / Columns: 14
     *   RowNumber
     *   CustomerId  
     *   Surname 
@@ -72,7 +72,8 @@ Powershell command for data import using kaggle API <br>
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   Formatted column headers to SQL compatibility. 
-The data contained no null values and all datatypes lined up with their field description. 
+The data contained no null values and all datatypes lined up with their field description. <br>
+
 ```python
 # Viewing the data types of the columns
 data.dtypes
@@ -83,9 +84,10 @@ data.shape
 # 1st check for null values and datatype check 
 data.info()
 ```
+
 <br>
 
-*   Some programming languages can be case sensitive like python and C++ for example, so using lower case letters for variable names allows for straightforward use of data in different programming languages.
+*   Some programming languages can be case sensitive like python and C++ for example, so using lower case letters for variable names allows for straightforward use of data in different programming languages.<br>
 
 ```python
 # (SQL standard) Formatting column headers by removing potential capital letters and spaces in column headers 
@@ -160,7 +162,7 @@ sns.set_palette(sns.color_palette(colors))
 
 <!-- Dashboard  -->
 
-<iframe title="P2Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+<!-- <iframe title="P2Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe> -->
 
 <a name="Busintelli"></a>  
 
@@ -214,7 +216,8 @@ I tried five different models:
 *   **Decision Tree Classifier** 
 *   **Random Forest Classifier**
 
-*   I put each classifier/model above in a list to iterate through to output accuracy scores.
+*   I put each classifier/model above in a list to iterate through to output accuracy scores.<br>
+
 ```python
 # Preparing algorithms in a list
 random_state = 23
@@ -265,7 +268,7 @@ The Random Forest Classifier model outperformed the other approaches on the test
 In this step, I used GridsearchCV to find the best parameters to optimise the performance of the model.
 However, in this instance the performance of the model was reduced, so I stuck with the initial parameters. 
 
-*   **Random Forest Classifier** : Accuracy = 86.8% | MSE = 0.1295 | RMSE = 0.36 (2dp)
+*   **Random Forest Classifier** : Accuracy = 86.8% / MSE = 0.1295 / RMSE = 0.36 (2dp)
 *   Hyperparameter tuning is effective in finding the best parameters to produce the highest model accuracy. 
 *   I gave a large range of values to test by using a great feature from the numpy library. ("np.linspace)
 
@@ -313,6 +316,8 @@ rf_best.fit(X_train,y_train)
 
 ## [Model Productionising](Code/P2_Vis_prep.ipynb)
 *   I used the pickle library to export the model. 
+<br>
+
 ```python
 # Dump model into pickle file
 pickle.dump(model1, open('.././svc_diabetes.pkl', 'wb'))
@@ -320,6 +325,9 @@ pickle.dump(model1, open('.././svc_diabetes.pkl', 'wb'))
 
 *   I then imported the model into a separate notebook to apply it to an 'unseen' dataset to find the predictions and the probability of those predictions. 
 *   String fields created for deployment readability aspect. 
+
+<br>
+
 ```python
 # Predicting based on orginal data 
 pred_rf = model.predict(data.values)
@@ -344,7 +352,7 @@ I deployed this model in Microsoft Power BI for business intelligence use. [View
 
 <a name="Prjmanage"></a> 
 
-## [Project Management (Agile | Scrum)](https://www.atlassian.com/software/jira)
+## [Project Management (Agile/Scrum/Kanban)](https://www.atlassian.com/software/jira)
 * Resources used
     * Jira
     * Confluence
@@ -374,6 +382,9 @@ I deployed this model in Microsoft Power BI for business intelligence use. [View
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more projects here](https://mattithyahudata.github.io/)
+
+
+
 
 
 
