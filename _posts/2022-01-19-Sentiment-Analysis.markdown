@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project: 🍫 Sentiment Analysis"
+title:  "Project: 😀 Sentiment Analysis"
 date:   2022-01-19 16:30:58 +0100
 categories: jekyll update
 ---
@@ -44,7 +44,7 @@ Powershell command for data import using kaggle API <br>
 ```
 [Data source link](https://www.kaggle.com/pashupatigupta/emotion-detection-from-text)
 [Data](Data/tweet_emotions.csv)
-*  Rows: 40000 | Columns: 3
+*  Rows: 40000 / Columns: 3
     *   tweet_id                   
     *   sentiment                      
     *   content                        
@@ -153,7 +153,7 @@ pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression())])
 
 ## [Model performance](Code/P12_Code.ipynb)
 The Logistic Regression model performed quite poorly on the test set. 
-*   **Logistic Regression** : Accuracy = 33.85% 
+*   **Logistic Regression** : Accuracy = 33.85% <br>
 ```python
 # Checking Accuracy
 pipe_lr.score(X_test,y_test)
@@ -163,7 +163,7 @@ pipe_lr.score(X_test,y_test)
 <a name="ModelEval"></a> 
 
 ## [Model Evaluation](Code/P12_Code.ipynb)
-*   I evaluated the model as always... by using it. 
+*   I evaluated the model as always... by using it. <br>
 ```python
 # Model testing
 extext = "I love basketball, it makes me happy!"
@@ -207,7 +207,7 @@ For questions, feedback, and contribution requests contact me
 
 
 
-
+<img src="/images/P12/sentiment_distrib.png" />
 
 
 
