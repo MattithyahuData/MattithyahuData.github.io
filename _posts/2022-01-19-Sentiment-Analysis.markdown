@@ -29,7 +29,7 @@ categories: jekyll update
 ## Resources Used
 **Python 3, PostgreSQL** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel neattext** <br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/requirements.txt) **pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel neattext** <br><br>
 Powershell command for installing anaconda packages used for this project  
 ```powershell
 pip install pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel neattext 
@@ -37,7 +37,7 @@ pip install pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 i
 
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P12_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d pashupatigupta/emotion-detection-from-text -p ..\Data --unzip
@@ -51,7 +51,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P12_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   Any NULL fields in the sentiment or content columns would have been dropped. 
@@ -81,7 +81,7 @@ data.columns = data.columns.str.replace(' ','_')
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P12_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -117,7 +117,7 @@ store_data(data,"P2 Bank Churn Prediction")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P12_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. 
 *   Distribution of sentiment categories 
 
@@ -126,7 +126,7 @@ I looked at the distributions of the data and the value counts for the various c
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P12_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb) 
 neattext library was used to clean text. I also split the data into train and tests sets with a test size of 20%.
 ```python
 # Viewing cleaning potential of nfx
@@ -141,7 +141,7 @@ data['clean_text'] = data['clean_text'].apply(nfx.remove_stopwords)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P12_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 
 I used a CountVectorizer to find the count of words in each statement. I then added a LogisticRegression algorithm. I fit both methods into a pipeline for ease of use later. 
 ```python
@@ -151,7 +151,7 @@ pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression())])
 
 <a name="ModelPerf"></a> 
 
-## [Model performance](Code/P12_Code.ipynb)
+## [Model performance](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 The Logistic Regression model performed quite poorly on the test set. 
 *   **Logistic Regression** : Accuracy = 33.85% <br>
 
@@ -163,7 +163,7 @@ pipe_lr.score(X_test,y_test)
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P12_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P12-Sentiment-Analysis/blob/master/Code/P12_Code.ipynb)
 *   I evaluated the model as always... by using it. <br>
 
 ```python
