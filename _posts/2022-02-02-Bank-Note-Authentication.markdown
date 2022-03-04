@@ -23,7 +23,7 @@ categories: jekyll update
 *   [Looking Ahead](#Lookahead)<br>
 *   [Questions & Contact me](#Lookahead)<br>
 
-<a name="Resources"></a>  
+<a name="resources"></a>  
 
 ## Resources Used
 **PySpark, Python 3, PostgreSQL** 
@@ -206,8 +206,8 @@ The Logistic Regression model performed well on the train and test sets.
 
 ## Questions & Contact me 
 For questions, feedback, and contribution requests contact me
-* ### [Click here to email me](mailto:theanalyticsolutions@gmail.com) 
-* ### [See more projects here](https://github.com/MattithyahuData?tab=repositories)
+* ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
+* ### [See more projects here](https://mattithyahudata.github.io/)
 
 
 
