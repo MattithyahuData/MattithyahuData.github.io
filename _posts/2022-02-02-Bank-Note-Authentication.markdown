@@ -28,7 +28,7 @@ categories: jekyll update
 ## Resources Used
 **PySpark, Python 3, PostgreSQL** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel pyspark** <br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/requirements.txt) **pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel pyspark** <br><br>
 Powershell command for installing anaconda packages used for this project  
 ```powershell
 pip install pandas numpy sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel pyspark 
@@ -42,7 +42,7 @@ spark = SparkSession.builder.appName('P10').getOrCreate()
 
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P10_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d ritesaluja/bank-note-authentication-uci-data -p ..\Data --unzip 
@@ -59,7 +59,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P10_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   The datatypes needed fixing as well as renaming a column because of the use of the name 'class' in python<br>
@@ -78,7 +78,7 @@ data = data.withColumnRenamed("class","outcome")
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P10_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -114,7 +114,7 @@ store_data(data,"P10 Bank Note Authentication")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P10_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   55.54% of the bank notes in the data are real notes.
 
@@ -132,7 +132,7 @@ I looked at the distributions of the data and the value counts for the various c
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P10_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb) 
 There was no need to transform the categorical variable(s) into dummy variables as they are all numeric. I also split the data into train and tests sets with a test size of 20%.
 *   I had to random Split instead of using train_test_split from sklearn <br>
 
@@ -145,7 +145,7 @@ train_data,test_data=model_data.randomSplit([0.80,0.20], seed=23)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P10_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 
 I used the LogisticRegression model and evaluated them using initially using accuracy_score and a confusions matrix. 
 *   I fed the independent and dependent features to the model and training it on the training data <br>
@@ -160,14 +160,14 @@ model=regressor.fit(train_data)
 
 <a name="ModelPerf"></a> 
 
-## [Model performance](Code/P10_Code.ipynb)
+## [Model performance](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 The Logistic Regression model performed well on the train and test sets. 
 *   **Logistic Regression** : Accuracy = 100% 
 
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P10_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P10-Bank-Note-Authentication/blob/master/Code/P10_Code.ipynb)
 * The ROC Curve shows the accuracy show reflect of both the train and test datasets 
 <img src="/images/P10/ROCtrain.png" />
 <img src="/images/P10/ROCtest.png" />
@@ -188,7 +188,7 @@ The Logistic Regression model performed well on the train and test sets.
 
 <a name="PrjEval"></a> 
 
-## [Project Evaluation](Presentation/P11Presentation.pptx) 
+## [Project Evaluation]() 
 *   WWW
     *   The end-to-end process
     *   Use of Spark and Databricks
