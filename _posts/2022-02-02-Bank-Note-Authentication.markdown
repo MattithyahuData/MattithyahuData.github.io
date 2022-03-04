@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project: 💵 Bank Note Authentication"
-date:   2021-11-01 16:30:58 +0100
+date:   2022-02-02 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 
@@ -18,7 +18,7 @@ categories: jekyll update
 *   [ML/DL Model Building](#ModelBuild)<br>
 *   [Model performance](#ModelPerf)<br>
 *   [Model Evaluation](#ModelEval)<br>
-*   [Project Management (Agile | Scrum)](#Prjmanage)<br>
+*   [Project Management (Agile/Scrum/Kanban)](#Prjmanage)<br>
 *   [Project Evaluation](#PrjEval)<br>
 *   [Looking Ahead](#Lookahead)<br>
 *   [Questions & Contact me](#Lookahead)<br>
@@ -118,16 +118,16 @@ store_data(data,"P10 Bank Note Authentication")
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   55.54% of the bank notes in the data are real notes.
 
-<img src="/images/P12/banknote_barchart_distrib.png" />
+<img src="/images/P10/banknote_barchart_distrib.png" />
 
 *   Boxplots were used to visualise features with outliers. These features were not scaled as this was POC project. I know that LogisticRegression models are very sensitive to the range of the data points so scaling is advised. 
-<img src="/images/P12/boxplots.png" />
+<img src="/images/P10/boxplots.png" />
 
 *   I visualised the distribution of features for the fake bank notes 
-<img src="/images/P12/histogramdistribution.png" />
+<img src="/images/P10/histogramdistribution.png" />
 
 *   The correlation matrix shows those features with strong and particularly weak correlations 
-<img src="/images/P12/data_correlation.png" />
+<img src="/images/P10/data_correlation.png" />
 
 
 <a name="FeatEng"></a>  
@@ -139,7 +139,6 @@ There was no need to transform the categorical variable(s) into dummy variables 
 ```python
 # Splitting data into train and test data
 train_data,test_data=model_data.randomSplit([0.80,0.20], seed=23)
-
 ```
 <!-- *   One Hot encoding to encode values -->
   
@@ -170,13 +169,13 @@ The Logistic Regression model performed well on the train and test sets.
 
 ## [Model Evaluation](Code/P10_Code.ipynb)
 * The ROC Curve shows the accuracy show reflect of both the train and test datasets 
-<img src="/images/P12/ROCtrain.png" />
-<img src="/images/P12/ROCtest.png" />
+<img src="/images/P10/ROCtrain.png" />
+<img src="/images/P10/ROCtest.png" />
 
 *   A confusion matrix showing the accuracy score of True and False predictions achieved by the model. 
 *   The model performed perfectly with no FP or FN (False Positive or False Negatives)
 
-<img src="/images/P12/Confusionmatrixlog.png" />
+<img src="/images/P10/Confusionmatrixlog.png" />
 
 
 <a name="Prjmanage"></a> 
