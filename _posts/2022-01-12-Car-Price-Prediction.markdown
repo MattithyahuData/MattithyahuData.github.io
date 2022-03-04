@@ -146,9 +146,9 @@ I looked at the distributions of the data and the value counts for the various c
 
 <iframe src="https://public.tableau.com/views/public_exercise/Dashboard1?:showVizHome=no&:embed=true" width="645" height="955"></iframe>
 
-<iframe src="https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?:showVizHome=no&:embed=true" width="645" height="955"></iframe>
+<iframe src="https://public.tableau.com/views/P8CarPriceAnalysis/Dashboard?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link" width="645" height="955"></iframe>
 
- break1
+ break1 https://public.tableau.com/views/P8CarPriceAnalysis/Dashboard?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link
 
  <iframe src="https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?publish=yes" width="645" height="955"></iframe>
 <a name="FeatEng"></a>  
