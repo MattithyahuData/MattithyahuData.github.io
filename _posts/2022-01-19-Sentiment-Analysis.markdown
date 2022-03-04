@@ -163,7 +163,8 @@ pipe_lr.score(X_test,y_test)
 <a name="ModelEval"></a> 
 
 ## [Model Evaluation](Code/P12_Code.ipynb)
-*   I evaluated the model as always... by using it. <br>
+*   I evaluated the model as always... by using it. test! <br>
+
 ```python
 # Model testing
 extext = "I love basketball, it makes me happy!"
