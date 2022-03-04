@@ -13,7 +13,7 @@ categories: jekyll update
 ## Resources Used
 **Python 3** 
 
-[**Anaconda Packages:**]((https://github.com/MattithyahuData/P1-World-Cup-2018-Prediction/blob/main/requirements.txt) **pandas, numpy, scikit-learn**
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P1-World-Cup-2018-Prediction/blob/main/requirements.txt) **pandas, numpy, scikit-learn**
 
 Kaggle Data source links: 
 * [results](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017/data?select=results.csv) 
