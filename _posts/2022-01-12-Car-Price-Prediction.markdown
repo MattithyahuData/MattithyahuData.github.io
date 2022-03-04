@@ -239,21 +239,6 @@ def Home():
     return render_template('index.html')
 ```
 
-*   Snippet to HTML to retrive outputs from running input values into the model. prediction_text is the final output based on what the model has returned. 
-```html
-<div style="color:rgb(255, 255, 255)">
-        <form action="{{ url_for('predict')}}" method="post">
-            <h2><strong>Car Valuation Calculator</strong></h2>
-            <h3>Year</h3>
-            <input id="first" name="Year" type="number ">
-            <h3>Purchase price</h3><br><input id="second" name="Present_Price" required="required">
-        
-        </form>
-
-        <br><br><h1>{{ prediction_text }}<h1>
-    </div>
-
-```
 
 <a name="ModelDeploy"></a> 
 
