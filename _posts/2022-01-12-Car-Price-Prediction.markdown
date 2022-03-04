@@ -144,7 +144,7 @@ I looked at the distributions of the data and the value counts for the various c
 
 <!-- Dashboard -->
 
-<iframe src="https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?publish=yes:showVizHome=no&:embed=true"
+<iframe src="https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?:showVizHome=no&:embed=true"
  width="645" height="955"></iframe>
 
 <a name="FeatEng"></a>  
