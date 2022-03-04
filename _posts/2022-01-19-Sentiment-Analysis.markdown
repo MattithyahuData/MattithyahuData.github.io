@@ -154,6 +154,7 @@ pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression())])
 ## [Model performance](Code/P12_Code.ipynb)
 The Logistic Regression model performed quite poorly on the test set. 
 *   **Logistic Regression** : Accuracy = 33.85% <br>
+
 ```python
 # Checking Accuracy
 pipe_lr.score(X_test,y_test)
@@ -163,7 +164,7 @@ pipe_lr.score(X_test,y_test)
 <a name="ModelEval"></a> 
 
 ## [Model Evaluation](Code/P12_Code.ipynb)
-*   I evaluated the model as always... by using it. test! <br>
+*   I evaluated the model as always... by using it. <br>
 
 ```python
 # Model testing
@@ -205,10 +206,6 @@ array(['love'], dtype=object)
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more projects here](https://mattithyahudata.github.io/)
-
-
-
-<img src="/images/P12/sentiment_distrib.png" />
 
 
 
