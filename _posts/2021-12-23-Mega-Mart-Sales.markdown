@@ -17,7 +17,7 @@ categories: jekyll update
 *   [Feature Engineering](#FeatEng)
 *   [ML/DL Model Building](#ModelBuild)
 *   [Model Evaluation](#ModelEval)
-*   [Project Management (Agile | Scrum)](#Prjmanage)
+*   [Project Management (Agile/Scrum/Kanban)](#Prjmanage)
 *   [Project Evaluation](#PrjEval)
 *   [Looking Ahead](#Lookahead)
 *   [Questions & Contact me](#Lookahead)
