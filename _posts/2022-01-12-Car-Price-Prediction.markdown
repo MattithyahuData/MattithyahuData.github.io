@@ -142,15 +142,7 @@ I looked at the distributions of the data and the value counts for the various c
 [View Interactive Dashboard](https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?publish=yes)
 *   I created an interactive dashboard to interactively analyse the reltionships between features.
 
-<!-- Dashboard -->
 
-<iframe src="https://public.tableau.com/views/public_exercise/Dashboard1?:showVizHome=no&:embed=true"></iframe>
-
-<iframe src="https://public.tableau.com/views/P8CarPriceAnalysis/Dashboard?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"></iframe>
-
- break1 https://public.tableau.com/views/P8CarPriceAnalysis/Dashboard?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link
-
- <iframe src="https://public.tableau.com/app/profile/mattithyahu/viz/P8CarPriceAnalysis/Dashboard?publish=yes"></iframe>
 <a name="FeatEng"></a>  
 
 ## [Feature Engineering](Code/P8_Code.ipynb) 
