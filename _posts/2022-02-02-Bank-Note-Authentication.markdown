@@ -199,7 +199,6 @@ The Logistic Regression model performed well on the train and test sets.
 <a name="Lookahead"></a> 
 
 ## Looking Ahead
-*   What next
 *   More Pyspark??? 
 
 <a name="Questions"></a> 

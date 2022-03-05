@@ -263,7 +263,6 @@ The end point was deployed using the Heroku cloud platform. Click above to use i
 <a name="Lookahead"></a> 
 
 ## Looking Ahead
-*   What next
 *   Can this be used on something like WeBuyanycar.com?? 
 
 <a name="Questions"></a> 
