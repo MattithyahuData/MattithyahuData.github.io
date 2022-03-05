@@ -34,7 +34,7 @@ categories: jekyll update
 ## Resources Used
 **Python 3, PostgreSQL, SQL, Tableau, Heroku** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask**<br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask**<br><br>
 Powershell command for installing anaconda packages used for this project    
 ```powershell
 pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask
@@ -42,7 +42,7 @@ pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn 
 
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P8_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d nehalbirla/vehicle-dataset-from-cardekho -p ..\Data --unzip 
@@ -63,7 +63,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/joining_data.sql)
+## [Data Pre-processing](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/joining_data.sql)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   Web-scraped conversion data for the corresponding years for Rupees to GBP. 
@@ -84,7 +84,7 @@ ON P8Car_Prices.Year = P8IND_to_GBP.Year;
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P8_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -121,7 +121,7 @@ store_data(data,"P8 Car Price Prediction")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P8_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   More than 70% of cars were bought brand new. 
 *   There are over 5 times more manual cars than automatic cars in the data 
@@ -145,7 +145,7 @@ I looked at the distributions of the data and the value counts for the various c
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P8_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb) 
 I transformed the categorical variables 'fuel_type', 'seller_type', and 'transmission' into dummy variables. I also split the data into train and tests sets with a test size of 20%.
 *   One Hot encoding to encode values
 
@@ -167,7 +167,7 @@ print(X_test.shape)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P8_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb)
 
 I used the RandomForestRegressor because of its performative benefits. RFRs have some key advantages that make them most suitable for certain problems and situations:
 *   It automates missing values present in the data
@@ -190,7 +190,7 @@ regressor.fit(X_train, y_train)
 
 <a name="ModelOpt"></a> 
 
-## [Model Optimisation](Code/P8_Code.ipynb)
+## [Model Optimisation](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb)
 In this step, I used RandomizedSearchCV to find the best parameters to optimise the performance of the model. 
 
 ```python
@@ -203,7 +203,7 @@ regressor.fit(X_train, y_train)
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P8_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/Code/P8_Code.ipynb)
 *   I used the r2_score to see the error associated with the model. But because it is a regression use case, I can’t give an accuracy score. 
 An R-Squared value above 0.7 would generally be seen as showing a high level of correlation. The model achieved a R2 value of 0.828.
 A value of 0.5 means that half of the variance in the outcome variable is explained by the model.
@@ -216,7 +216,7 @@ A value of 0.5 means that half of the variance in the outcome variable is explai
 
 <a name="ModelProd"></a> 
 
-## [Model Productionisation](app.py)
+## [Model Productionisation](https://github.com/MattithyahuData/P8-Car-Price-Prediction/blob/master/app.py)
 I built a flask REST API endpoint that was hosted on a local webserver before Heroku deployment. The API endpoint takes in request values and returns prediction of diabetes diagnosis. I also optimised and formatted the frontend using HTML and CSS. 
 
 *   This code takes user input from the model frontend to run it through the model and returns and input.
