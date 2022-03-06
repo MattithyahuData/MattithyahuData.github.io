@@ -27,14 +27,14 @@ categories: jekyll update
 ## Resources Used
 **Python 3, PostgreSQL** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas, numpy, pandas_profiling, ipywidgets, sklearn, xgboost, matplotlib, seaborn, sqlalchemy, kaggle** <br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/requirements.txt) **pandas, numpy, pandas_profiling, ipywidgets, sklearn, xgboost, matplotlib, seaborn, sqlalchemy, kaggle** <br><br>
 Powershell command for installing anaconda packages used for this project  
 ```powershell
 pip install pandas numpy pandas_profiling ipywidgets sklearn xgboost matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel
 ```
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P5_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d shree1992/housedata -p ..\Data --unzip 
@@ -65,7 +65,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P5_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling.   
 *   Standard NULL and data validity checks in to ensure data is reliable and compatible for the model.  
 
@@ -94,7 +94,7 @@ data.columns = data.columns.str.replace(' ','_')
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P5_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -131,20 +131,20 @@ store_data(data,"P2 Bank Churn Prediction")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P7_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 
 * We can see that most houses in the data have between 2 - 5 rooms. 
-<img src="images/categoricalfeatures_countdistrib.png" />
-<img src="images/categoricalfeatures_distrib.png" />
+<img src="/images/P5/categoricalfeatures_countdistrib.png" />
+<img src="/images/P5/categoricalfeatures_distrib.png" />
 
 *   The data is somewhat correlated.
-<img src="images/correlation.png" />
+<img src="/images/P5/correlation.png" />
 
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P2_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb) 
 Here I used OneHotEncoding to turn all features into numeric features as the XGBRegressor can only take numeric inputs. 
 
 ```python
@@ -172,21 +172,21 @@ print(X_test.shape)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P11_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb)
 
 I applied the XGBRegressor model to achieve the predictions. 
 
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P4_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P5-House-Prices-Prediction/blob/master/Code/P5_Code.ipynb)
 *   I used the r2_score to see the error associated with the model. But because it is a regression use case, I can’t give an accuracy score. 
 An R-Squared value above 0.7 would generally be seen as showing a high level of correlation. The model achieved a R2 value of 0.688.
 A value of 0.5 means that half of the variance in the outcome variable is explained by the model.
 
 *   Plotting the actual and predicted values for botht the training and test sets shows how accracy and linear correlation decreases in the test data. 
-<img src="images/trainevaluation.png" />
-<img src="images/testevaluation.png" />
+<img src="/images/P5/trainevaluation.png" />
+<img src="/images/P5/testevaluation.png" />
 
 
 <a name="Prjmanage"></a> 
@@ -199,7 +199,7 @@ A value of 0.5 means that half of the variance in the outcome variable is explai
 
 <a name="PrjEval"></a> 
 
-## [Project Evaluation](Presentation/P11Presentation.pptx) 
+## [Project Evaluation]() 
 *   WWW
     *   The end-to-end process
     *   The review and process of a regression use case 
