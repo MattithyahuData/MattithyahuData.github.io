@@ -35,7 +35,7 @@ categories: jekyll update
 ## Resources Used
 **Python 3, PostgreSQL** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask** <br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask** <br><br>
 Powershell command for installing anaconda packages used for this project  
 ```powershell
 pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel flask 
@@ -43,7 +43,7 @@ pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn 
 
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P7_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d mathchi/diabetes-data-set -p ..\Data --unzip 
@@ -63,7 +63,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P7_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 *   Formatted column headers to SQL compatibility. 
@@ -94,7 +94,7 @@ data.columns = data.columns.str.replace(' ','_')
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P7_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -131,7 +131,7 @@ store_data(data,"P7 Diabetes Prediction")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P7_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   34.9% in the dataset have diabetes.
 
@@ -169,19 +169,19 @@ colors = ["#32CD32","#FF0000"]
 sns.set_palette(sns.color_palette(colors))
 ```
 
-<img src="images/diabetes_barchart_distrib.png" />
+<img src="/images/P7/diabetes_barchart_distrib.png" />
 
 *   There is visually a relationship between the number of pregnancies and diabetes diagnosis. 
-<img src="images/independentfeatures_distrib.png" />
+<img src="/images/P7/independentfeatures_distrib.png" />
 
 *   Boxplots were used to visualise features with outliers. These features will be scaled later before modelling. 
-<img src="images/boxplots.png" />
+<img src="/images/P7/boxplots.png" />
 
 *   I visualised the distribution for those with diabetes
-<img src="images/histogramdistribution.png" />
+<img src="/images/P7/histogramdistribution.png" />
 
 *   All features are generally not strongly correlated 
-<img src="images/diabetes_correlation.png" />
+<img src="/mages/P7/diabetes_correlation.png" />
 
 <!-- <a name="Dataviz"></a>  
 
@@ -203,7 +203,7 @@ On Page 2 of the interactive dashboard, I have provided the stake holders with t
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P7_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb) 
 There was no need to transform the categorical variable(s) into dummy variables as they are all numeric. I also split the data into train and tests sets with a test size of 20%.
 *   Using RobustScaler to scale
 <!-- *   One Hot encoding to encode values -->
@@ -215,7 +215,7 @@ scale_vars = ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insul
 transformer = RobustScaler().fit(data[scale_vars])
 data[scale_vars] = transformer.transform(data[scale_vars])
 
-# Using train test split to split train and test data | Stratifying so y_test can reflect y_train.Resulting in a more realistic simulation of how the model is going to perform on new data
+# Using train test split to split train and test data / Stratifying so y_test can reflect y_train.Resulting in a more realistic simulation of how the model is going to perform on new data
 X_train, X_test, y_train, y_test = train_test_split(X, y,  test_size=0.20, random_state=23, shuffle=True, stratify=y)
 
 # Viewing shape of train / test data
@@ -226,7 +226,7 @@ print(X_test.shape)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P7_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 
 I tried four different models and evaluated them using initially using accuracy_score and then MSE/RMSE. I chose MSE and RMSE because it is sensitive to outliers, punishes larger errors and is relatively easy to interpret.   
 
@@ -268,42 +268,42 @@ for clf in classifiers:
 print("=" * 30)
 ```
 
-<img src="images/Crossvalidation.png" />
+<img src="/images/P7/Crossvalidation.png" />
 
 <a name="ModelPerf"></a> 
 
-## [Model performance](Code/P7_Code.ipynb)
+## [Model performance](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 The Logistic Regression model outperformed the other approaches on the test and validation sets. 
 *   **Logistic Regression** : Accuracy = 77.92% 
 *   **SVC** : Accuracy = 75.32% 
 
 <a name="ModelOpt"></a> 
 
-## [Model Optimisation](Code/P7_Code.ipynb)
+## [Model Optimisation](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 In this step, I used GridsearchCV and RandomizedSearchCV to find the best parameters to optimise the performance of the model.
 Using the best parameters, I improved the SVC model accuracy of SVC by **1.3%**. The Logistic Regression model however saw no increase in accuracy. 
 
-*   **Logistic Regression** : Accuracy = 77.92% | MSE = 0.22 | RMSE =  0.47 (2dp)
-*   **SVC** : Accuracy = 77.27%  | MSE = 0.23 | RMSE =  0.48 (2dp)  
+*   **Logistic Regression** : Accuracy = 77.92% / MSE = 0.22 / RMSE =  0.47 (2dp)
+*   **SVC** : Accuracy = 77.27%  / MSE = 0.23 / RMSE =  0.48 (2dp)  
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P7_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 *   A confusion matrix showing the accuracy score of True and False predictions achieved by the model. 
 
 *   Logistic Regression 
-<img src="images/Confusionmatrixlog.png" />
+<img src="/images/P7/Confusionmatrixlog.png" />
 
 *   Support Vector Classification
-<img src="images/Confusionmatrixsvc.png" />
+<img src="/images/P7/Confusionmatrixsvc.png" />
 
 *   Plotting the ROC Curve gave me some key insight to select the best performing model. Although Logistic regression has a higher accuracy value, I selected the SVC model as the ROC Curve shows the SVC to predict more true positives and true negative which is key for deployment and use in unseen data. 
 
-<img src="images/ROC_Curve.png" />
+<img src="/images/P7/ROC_Curve.png" />
 
 <a name="ModelProd"></a> 
 
-## [Model Productionisation](Code/P7_Code.ipynb)
+## [Model Productionisation](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/Code/P7_Code.ipynb)
 *   I used the pickle library to export the model. 
 ```python
 # Dump model into pickle file
@@ -312,7 +312,7 @@ pickle.dump(model1, open('.././svc_diabetes.pkl', 'wb'))
 
 <a name="ModelDeploy"></a> 
 
-## [Deployment](app.py)
+## [Deployment](https://github.com/MattithyahuData/P7-Diabetes-Prediction/blob/master/app.py)
 I built a flask REST API endpoint that was hosted on a local webserver before Heroku deployment. The API endpoint takes in request values and returns prediction of diabetes diagnosis. I also optimised and formatted the frontend using HTML and CSS. 
 
 ```python
@@ -388,7 +388,7 @@ if __name__ == '__main__':
 
 <a name="PrjEval"></a> 
 
-## [Project Evaluation](Presentation/P11Presentation.pptx) 
+## [Project Evaluation]() 
 *   WWW
     *   The end-to-end process
     *   Deployment and sharing of work 
