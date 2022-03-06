@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project: 🚘 Car Price Prediction"
-date:   2022-02-12 16:30:58 +0100
+date:   2021-11-27 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 
