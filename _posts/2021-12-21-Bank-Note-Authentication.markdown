@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project: 💵 Bank Note Authentication"
-date:   2022-02-02 16:30:58 +0100
+date:   2021-12-21 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 
