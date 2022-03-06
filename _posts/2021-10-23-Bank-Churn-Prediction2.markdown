@@ -5,8 +5,8 @@ date:   2021-10-23 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 
-* End to end project reasearching the effects personal attributes have on the diagnosis of diabetes.
-* Optimised XGBoost using GridsearchCV  to reach the best model. 
+* End to end project researching the effects customer attributes have on the churn of a bank customer and predicting those customers that may churn.
+* Optimised ANN model using GridsearchCV to reach the best model. 
 * Built a stakeholder facing visual deployment of model to predict churn of new customers 
 * Deployed Model in Power BI for Business Intelligence analysis 
 * An artificial neural network (ANN) is a type of machine learning algorithm that is similar to the brain.
@@ -40,7 +40,7 @@ categories: jekyll update
 ## Resources Used
 **Python 3, PostgreSQL, PowerBI** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy tensorflow keras kaggle psycopg2 ipykernel**<br><br>
+[**Anaconda Packages:**](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy tensorflow keras kaggle psycopg2 ipykernel**<br><br>
 Powershell command for installing anaconda packages used for this project    
 ```powershell
 pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn sqlalchemy tensorflow keras kaggle psycopg2 ipykernel
@@ -48,7 +48,7 @@ pip install pandas numpy pandas_profiling ipywidgets sklearn matplotlib seaborn 
 
 <a name="DataCollection"></a>  
 
-## [Data Collection](Code/P6_Code.ipynb)
+## [Data Collection](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 Powershell command for data import using kaggle API <br>
 ```powershell
 !kaggle datasets download -d kmalit/bank-customer-churn-prediction -p ..\Data --unzip 
@@ -73,7 +73,7 @@ Powershell command for data import using kaggle API <br>
 
 <a name="DataPre-processing"></a>  
 
-## [Data Pre-processing](Code/P6_Code.ipynb)
+## [Data Pre-processing](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 After I had all the data I needed, I needed to check it was ready for exploration and later modelling. I made the following changes and created the following variables:   
 *   General NULL and data validity checks  
 The data contained no null values and all datatypes lined up with their field description. <br>
@@ -101,7 +101,7 @@ data.columns = data.columns.str.replace(' ','_')
 
 <a name="DataWarehousing"></a>
 
-## [Data Warehousing](Code/P6_Code.ipynb)
+## [Data Warehousing](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 I warehouse all data in a Postgre database for later use and reference.
 
 *   ETL in python to PostgreSQL Database.
@@ -137,7 +137,7 @@ store_data(data,"P6 ANN Bank Churn")
 
 <a name="EDA"></a>  
 
-## [Exploratory data analysis](Code/P6_Code.ipynb) 
+## [Exploratory data analysis](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb) 
 I looked at the distributions of the data and the value counts for the various categorical variables that would be fed into the model. Below are a few highlights from the analysis.
 *   79.63% of customers have churned - Distribution of features and their effects on churning - Some features have outliers, visualising this allows for greater clarity on the extent. 
 <img src="/images/P6/Churn_barchart_distrib.png" />
@@ -167,7 +167,7 @@ On Page 2 of the interactive dashboard, I have provided the stake holders with t
 
 <a name="FeatEng"></a>  
 
-## [Feature Engineering](Code/P6_Code.ipynb) 
+## [Feature Engineering](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb) 
 I transformed the categorical variable(s) 'geography' and 'gender' into dummy variables. I also split the data into train and tests sets with a test size of 20%.
 *   One Hot encoding to encode values
 *   Using StandardScaler to scale  
@@ -194,7 +194,7 @@ X_test = sc.transform(X_test)
 
 <a name="ModelBuild"></a> 
 
-## [ML/DL Model Building](Code/P6_Code.ipynb)
+## [ML/DL Model Building](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 
 I used an Artificial Neural Network to attempt to improve the predictive performance for the churn project. ANNs have some key advantages that make them most suitable for certain problems and situations:
 *   ANNs have the ability to learn and model non-linear and complex relationships, which is really important because in real-life, many of the relationships between inputs and outputs are non-linear as well as complex
@@ -231,7 +231,7 @@ classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
 
 <a name="ModelPerf"></a> 
 
-## [Model performance](Code/P6_Code.ipynb)
+## [Model performance](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 *   **Artificial Neural Network** : Accuracy = 84.45% 
 
 ```python
@@ -247,7 +247,7 @@ print("Accuracy Score: ", accuracy)
 
 <a name="ModelOpt"></a> 
 
-## [Model Optimisation](Code/P6_Code.ipynb)
+## [Model Optimisation](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 In this step, I used GridsearchCV to find the best parameters to optimise the performance of the model. (* Unless you have an extremely powrful computer using GridsearchCV with a large number of epochs will take a lot of time.)
 Using the best parameters, I improved the model accuracy by **1%**
 
@@ -273,7 +273,7 @@ print("Best accuracy: ",best_accuracy)
 
 <a name="ModelEval"></a> 
 
-## [Model Evaluation](Code/P6_Code.ipynb)
+## [Model Evaluation](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 *   A confusion matrix showing the accuracy score of 84.45% achieved by the model. 
 
 * I tested the model out
@@ -289,7 +289,7 @@ new_prediction
 
 <!-- <a name="ModelProd"></a> 
 
-## [Model Productionisation](Code/P6_Code.ipynb)
+## [Model Productionisation](https://github.com/MattithyahuData/P6-ANN-Chrun-Prediction/blob/master/Code/P6_Code.ipynb)
 *   A confusion matrix showing the accuracy score of 97.25% achieved by the model. 
 <img src="images/Confusionmatrix.png" /> -->
 
