@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project: ⚽ World Cup 2018 Prediction"
-date:   2021-11-01 16:30:58 +0100
+date:   2021-09-01 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 

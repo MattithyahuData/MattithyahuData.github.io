@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project: 🛍 Amazon product status checks"
-date:   2021-09-12 16:30:58 +0100
+date:   2021-09-20 16:30:58 +0100
 categories: jekyll update
 ---
 # Project Overview 
