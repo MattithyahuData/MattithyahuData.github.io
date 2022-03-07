@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Article: Python Classes"
-date:   2022-03-08 16:30:58 +0100
+date:   2022-03-07 16:30:58 +0100
 categories: jekyll update
 ---
 <!-- ## **What is Data Science** -->
