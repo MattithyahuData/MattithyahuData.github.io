@@ -9,7 +9,7 @@ categories: jekyll update
 
 #### *What is Object-oriented programming (OOP)?* OOP is a procedural programming technique that organises code design around data, or objects, rather than functions and logic. 
 
-*"Python is an object-oriented programming language. Everything is in Python treated as an object, including variable, function, list, tuple, dictionary, set, etc. Every object belongs to its class."*
+*"Python is an object-oriented programming language. Everything in Python is treated as an object, including variable, function, list, tuple, dictionary, set, etc. Every object belongs to its class."*
 
 <img src="/images/classimage.jpg"/>
 
