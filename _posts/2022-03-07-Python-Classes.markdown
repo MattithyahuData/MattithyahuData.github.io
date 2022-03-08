@@ -11,7 +11,7 @@ categories: jekyll update
 
 *"Python is an object-oriented programming language. Everything is in Python treated as an object, including variable, function, list, tuple, dictionary, set, etc. Every object belongs to its class."*
 
-<img src="images/classimage.jpg"/>
+<img src="/images/classimage.jpg"/>
 
 <br>
 <br>
