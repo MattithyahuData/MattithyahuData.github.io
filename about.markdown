@@ -3,10 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-<img src="/images/My photo1.png" style="width:100px;height:100px;"/>
-
 ### Welcome to my projects and publication portfolio, my name is **Mattithyahu**
+
+<img src="/images/My photo1.png" style="float:right;width:200px;height:200px;"/>
 
 I specialise in using data in intelligent ways to answer questions, provoke thought, and grow investment. 
 
@@ -16,7 +15,7 @@ I specialise in using data in intelligent ways to answer questions, provoke thou
     *   [Personal website](https://mattithyahutech.co.uk)
     *   [GitHub Page](https://github.com/MattithyahuData)
 
-<img src="/images/My photo1.png" style="width:500px;height:600px;"/>
+
 
 
 [jekyll-organization]: https://github.com/jekyll
