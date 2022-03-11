@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Article: Anyone can code"
-date:   2022-03-07 16:30:58 +0100
+date:   2022-03-11 16:30:58 +0100
 categories: jekyll update
 ---
 
