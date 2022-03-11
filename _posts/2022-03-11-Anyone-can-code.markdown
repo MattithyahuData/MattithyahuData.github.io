@@ -15,12 +15,12 @@ categories: jekyll update
 <br>
 <br>
 
-Like with many things, before we really begin doing something we start with many misconceptions of how things are. Things may turn out to be easier or harder than expected but rarely exactly how we expect things to be. 
+Like with many things, before we really begin doing something we start with many misconceptions of how they are. Things may turn out to be easier or harder than expected but rarely exactly how we expect them to be. 
 Coding/programming is no different. 
 
 **Our misconceptions can sometimes drive us and slow us down from doing things.**
 
-Programming is not easy, but it is achievable for anyone, education today is becoming less mainstream. Meaning education is not a thing that only higher education institutions offer, education is everywhere. YouTube, LinkedIn, free courses, you name it, it’s out there. 
+Programming is not easy, but it is achievable for anyone as education today is becoming less mainstream. Meaning education is not a thing that only higher education institutions offer, education is everywhere. YouTube, LinkedIn, free courses, you name it, it’s out there. 
 
 **"Education is everywhere, there is almost no excuse not to be educated today" - Mattithyahu**
 
@@ -28,7 +28,7 @@ With the above quote, I must clarify that when I say education, I am not simply 
 
 In my experience, programming is not hard, it is a skill and is developed over time with consistent practice. Programming has further developed my problem-solving abilities and allowed for greater creativity and development in my work.
 
-**I know it can't be for everyone, but may it be for you?**
+**I know it can't be for everyone, but could it be for you?**
 
 If you’re already into your programming journey, *well done*, if you’re just starting, *goodluck!*, and if it simply isn’t for you, that’s fine *all the best in whatever you do*. 
 
