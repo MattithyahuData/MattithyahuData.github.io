@@ -117,9 +117,10 @@ personinfo_obj.myfunc()
 Hello my name is John Doeand I am 30
 ```
 
-Thanks for making it to the end of this tutorial style article.
+I hope this has added value to you. 
 
 ## Questions | Contact me 
+Thanks for reading.
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more work here](https://mattithyahudata.github.io/)

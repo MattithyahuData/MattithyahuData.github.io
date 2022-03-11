@@ -24,6 +24,7 @@ Secondly, *what is science?*. Science is the study of things. The Science counci
 In summary, **data science** is any information that can be measured and quantified, and later researched for greater understanding. Data plays a big part in our everyday lives, it has been the unseen back bone of our society, it's what records how much you have in your bank account, stores your phone contacts, keeps your email receipts, stores your shopping list in any form (digital / paper / memory), remembers where you need to go etc. Data is very important and the science of it is ever growing. 
 
 ## Questions | Contact me 
+Thanks for reading.
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more work here](https://mattithyahudata.github.io/)

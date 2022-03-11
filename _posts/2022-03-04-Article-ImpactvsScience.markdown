@@ -29,6 +29,7 @@ Most companies today are attempting to join the data revolution and improve thei
 In summary, I understand not everyone can be a Data Scientist, in the same way not everyone can be a footballer or an author - but whatever your industry, have an impact. 
 
 ## Questions | Contact me 
+Thanks for reading.
 For questions, feedback, and contribution requests contact me
 * ### [Click here to email me](mailto:contactmattithyahu@gmail.com) 
 * ### [See more work here](https://mattithyahudata.github.io/)
