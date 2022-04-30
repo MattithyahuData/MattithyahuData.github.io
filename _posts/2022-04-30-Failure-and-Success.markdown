@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Article: Failure and Success"
-date:   2022-04-30 16:30:58 +0100
+date:   2022-04-30 00:00:58 +0100
 categories: jekyll update
 ---
 
