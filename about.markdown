@@ -14,6 +14,7 @@ I specialise in using data in intelligent ways to answer questions, provoke thou
 *   Find out more:
     *   [Personal website](https://mattithyahutech.co.uk)
     *   [GitHub Page](https://github.com/MattithyahuData)
+    *   [Created Python packages](https://pypi.org/user/mattithyahudata/)
 
 
 
