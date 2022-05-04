@@ -11,7 +11,7 @@ I specialise in using data in intelligent ways to answer questions, provoke thou
 
 *   I'm currently working on open-source projects, applying machine learning in researching alpha, and C++ development
 *   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><strong>Click here to email Mattithyahu</strong></a>
-*   Find out more:
+*   View my public work:
     *   [GitHub Page](https://github.com/MattithyahuData)
     *   [Created Python packages](https://pypi.org/user/mattithyahudata/)
 
