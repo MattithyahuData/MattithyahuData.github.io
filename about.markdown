@@ -10,7 +10,7 @@ permalink: /about/
 I specialise in using data in intelligent ways to answer questions, provoke thought, drive decisions, and grow investment. 
 
 *   I'm currently working on researching alpha 
-*   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><font size="6" color='white'><strong>Click here to email me</strong></font></a>
+*   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><font size="6" color='black'><strong>Click here to email me</strong></font></a>
 *   View my public work:
     *   [GitHub Page](https://github.com/MattithyahuData)
     *   [Created Python packages](https://pypi.org/user/mattithyahudata/)
