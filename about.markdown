@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-### Welcome to my publication portfolio, my name is **Mattithyahu**
+### Welcome to my publications portfolio, my name is **Mattithyahu**
 
 <img src="/images/My photo1.png" style="float:right;width:200px;height:200px;"/>
 
