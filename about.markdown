@@ -8,7 +8,7 @@ permalink: /about/
 <img src="/images/My photo1.png" style="float:right;width:200px;height:200px;"/>
 
 *   I'm currently working on projects that solve problems
-*   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><strong>email me</strong></font></a>
+*   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><strong>email me</strong></a>
 *   View my public work:
     <strong>
     *   [GitHub Page](https://github.com/MattithyahuData)
