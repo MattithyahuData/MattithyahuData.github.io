@@ -13,8 +13,7 @@ permalink: /about/
     <strong>
     *   [GitHub Page](https://github.com/MattithyahuData)
     *   [Created Python packages](https://pypi.org/user/mattithyahudata/)
-    *   [StackOverflow help page](https://stackoverflow.com/users/16562519/analyticsolutions)
-    </strong>
+    *   [StackOverflow help page](https://stackoverflow.com/users/16562519/analyticsolutions)</strong>
 
 
 
