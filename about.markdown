@@ -10,11 +10,9 @@ permalink: /about/
 *   I'm currently working on projects that solve problems
 *   How to contact me: <a href="mailto:contactmattithyahu@gmail.com"><strong>email me</strong></a>
 *   View my public work:
-    <strong>
     *   [GitHub Page](https://github.com/MattithyahuData)
     *   [Created Python packages](https://pypi.org/user/mattithyahudata/)
-    *   [StackOverflow help page](https://stackoverflow.com/users/16562519/analyticsolutions)</strong>
-
+    *   [StackOverflow help page](https://stackoverflow.com/users/16562519/analyticsolutions)
 
 
 
